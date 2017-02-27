@@ -1,0 +1,46 @@
+/*----------------------------------------*\
+    #SECTION-FOOTER
+\*----------------------------------------*/
+
+.footer__left,
+.footer__right {
+    float: left;
+    width: 50%;
+}
+
+/*copyright*/
+.footer__copyright {
+    font-family:"fira_sanslight";
+    font-size: 14px;
+    color: #9c9c9c;
+    margin-top: 15px;
+}
+
+/*socials*/
+.socials {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.socials__item {
+    display: inline-block;
+    margin-right: 1px;
+}
+
+.socials__link {
+    display: block;
+    width: 31px;
+    height: 30px;
+}
+
+@each $social in (fb, vk, tw) {
+    .socials__link_#{$social} {
+        background: url("/img/icons/#{$social}.png") center center no-repeat;
+
+        &:hover {
+            background: url("/img/icons/#{$social}-hover.png") center center no-repeat;
+        }
+    }
+}
+
+

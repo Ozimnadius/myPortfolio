@@ -7568,6 +7568,7 @@ a {
     padding: 0;
     font-size: 16px;
     font-family: 'fira_sanslight', 'Helvetica', sans-serif;
+    height: auto;
   }
   .portfolio {
     margin-top: 46px;
